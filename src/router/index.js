@@ -1,13 +1,4 @@
-// src/router/index.js
 import { createRouter, createWebHistory } from "vue-router";
-
-const router = createRouter({
-    history: createWebHistory("/"),
-    routes,
-    scrollBehavior() {
-      document.getElementById("app").scrollIntoView();
-    },
-  });
 
 const routes = [
   {
@@ -23,5 +14,17 @@ const routes = [
     ],
   },
 ];
+
+const router = createRouter({
+  history: createWebHistory("/"),
+  routes,
+  scrollBehavior() {
+    document.getElementById("app").scrollIntoView();
+  },
+});
+
+
+
+
 
 export default router;
