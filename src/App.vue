@@ -20,7 +20,7 @@
 
 body {
   width: 100%;
+  min-width: 900px;
   margin: 0;
-
 }
 </style>
